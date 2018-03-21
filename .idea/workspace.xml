@@ -532,7 +532,7 @@
       <workItem from="1521599806425" duration="6970000" />
       <workItem from="1521612906801" duration="556000" />
       <workItem from="1521618827659" duration="4334000" />
-      <workItem from="1521626214971" duration="412000" />
+      <workItem from="1521626214971" duration="430000" />
     </task>
     <task id="LOCAL-00001" summary="使用ssm技术重新搭建点餐系统架构">
       <created>1521613319969</created>
@@ -555,11 +555,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521626744623</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="使用ssm技术重新搭建点餐系统架构">
+      <created>1521626808402</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1521626808402</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13921000" />
+    <option name="totallyTimeSpent" value="13939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />

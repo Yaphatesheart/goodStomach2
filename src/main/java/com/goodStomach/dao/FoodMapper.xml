@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+			"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+			
+<mapper namespace="com.goodStomach.dao.FoodMapper">
+
+	<select id="selectAll" resultType="com.goodStomach.entity.Food">
+		select * from tbl_food
+	</select>
+	
+	<select id="selectById" parameterType="java.lang.Long" resultType="com.goodStomach.entity.Food">
+		select * from tbl_food where id=#{id}
+	</select>
+	
+	<select id="selectByKind" parameterType="java.lang.Long" resultType="com.goodStomach.entity.Food">
+		select * from tbl_food where k_id=#{k_id}
+	</select>
+	
+	<insert id="addOne" parameterType="com.goodStomach.entity.Food">
+		insert into tbl_food(id,name,price,url,burdenMessage,foodMessage,k_id) 
+		values(#{id},#{name},#{price},#{url},#{burdenMessage},#{foodMessage},#{k_id})
+	</insert>
+
+	<update id="updateOne" parameterType="com.goodStomach.entity.Food">
+		update tbl_food set name=#{name},price=#{price},url=#{url},burdenMessage=#{burdenMessage},foodMessage=#{foodMessage},k_id=#{k_id}
+		where id=#{id}
+	</update>
+	
+	<delete id="deleteOne" parameterType="java.lang.Long">
+		delete from tbl_food where id=#{id}
+	</delete>
+</mapper>

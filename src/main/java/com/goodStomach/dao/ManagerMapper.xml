@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+			"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+			
+<mapper namespace="com.goodStomach.dao.ManagerMapper">
+	
+	<select id="selectManagerByName" parameterType="java.lang.String" resultType="com.goodStomach.entity.Manager">
+		select * from tbl_manager where name=#{name}
+	</select>
+	
+</mapper>
